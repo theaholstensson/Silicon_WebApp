@@ -1,0 +1,80 @@
+.account-details {
+    .container {
+        width: 40%;
+
+        .content {
+
+
+            .form-basic {
+                margin-top: 20px;
+
+                .form-content {
+                    margin-top: 20px;
+                    display: grid;
+                    gap: 20px;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-areas: "firstname lastname" "email phone" "bio bio" "button button";
+                }
+            }
+
+            #form-firstName {
+                grid-area: firstname;
+            }
+
+            #form-lastName {
+                grid-area: lastName;
+            }
+
+            #form-email {
+                grid-area: email;
+            }
+
+            #form-phone {
+                grid-area: phone;
+            }
+
+            #form-bio {
+                grid-area: bio;
+            }
+
+            .form-button {
+                margin-top: 20px;
+                grid-area: button;
+                display: flex;
+                gap: 20px;
+                width: 50%;
+
+                .btn-gray {
+                    width: 70%;
+                }
+            }
+
+            .form-address {
+                margin-top: 50px;
+
+                .form-content {
+                    margin-top: 20px;
+                    margin-bottom: 100px;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-areas: "addressline_1" "addressline_2" "city postalcode";
+                }
+            }
+
+            #form-addressline-1 {
+                grid-area: addressline_1;
+            }
+
+            #form-addressline-2 {
+                grid-area: addressline_2;
+            }
+
+            #form-postalcode {
+                grid-area: postalcode;
+            }
+
+            #form-city {
+                grid-area: city;
+            }
+        }
+    }
+}

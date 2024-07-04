@@ -1,0 +1,77 @@
+.signup {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container {
+        width: 40%;
+
+        form {
+            .form-content {
+                margin-top: 30px;
+                display: grid;
+                gap: 20px;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: "firstname lastname" "email email" "password confirm" "terms terms" "submit submit";
+            }
+
+            .input-group {
+                label {
+                    padding: 3px;
+                }
+
+                input.input-validation-error {
+                    border: 1px solid var(--color-danger-dark);
+                }
+            }
+
+            .input-group span {
+                color: var(--color-danger-dark); // Set text color to red for error messages
+            }
+
+            .checkbox-group {
+                margin-top: 10px;
+                margin-bottom: 30px;
+
+                .checkbox-container {
+                    label {
+                        margin-bottom: 5px; // Adjust margin as needed
+                    }
+                }
+
+                span {
+                    color: var(--color-danger-dark); // Set text color to red for checkbox error messages
+                }
+            }
+
+            #form-firstName {
+                grid-area: firstname;
+            }
+
+            #form-lastName {
+                grid-area: lastName;
+            }
+
+            #form-email {
+                grid-area: email;
+            }
+
+            #form-password {
+                grid-area: password;
+            }
+
+            #form-confirmpassword {
+                grid-area: confirm;
+            }
+
+            #form-checkbox {
+                grid-area: terms;
+            }
+
+            #form-button {
+                grid-area: submit;
+            }
+        }
+    }
+}
